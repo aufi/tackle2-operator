@@ -3,13 +3,13 @@
 set -e
 set -x
 
-TACKLE_OPERATOR_INDEX_IMAGE="${TACKLE_OPERATOR_INDEX_IMAGE:-quay.io/konveyor/tackle2-operator-index:latest}"
-TACKLE_HUB_IMAGE="${TACKLE_HUB_IMAGE:-quay.io/konveyor/tackle2-hub:latest}"
+TACKLE_OPERATOR_INDEX_IMAGE="${TACKLE_OPERATOR_INDEX_IMAGE:-quay.io/konveyor/tackle2-operator-index:release-0.2}"
+TACKLE_HUB_IMAGE="${TACKLE_HUB_IMAGE:-quay.io/konveyor/tackle2-hub:release-0.2}"
 TACKLE_PATHFINDER_IMAGE="${TACKLE_PATHFINDER_IMAGE:-quay.io/konveyor/tackle-pathfinder:1.3.0-native}"
-TACKLE_UI_IMAGE="${TACKLE_UI_IMAGE:-quay.io/konveyor/tackle2-ui:latest}"
+TACKLE_UI_IMAGE="${TACKLE_UI_IMAGE:-quay.io/konveyor/tackle2-ui:release-0.2}"
 TACKLE_UI_INGRESS_CLASS_NAME="${TACKLE_UI_INGRESS_CLASS_NAME:-nginx}"
-TACKLE_ADDON_ADMIN_IMAGE="${TACKLE_ADDON_ADMIN_IMAGE:-quay.io/konveyor/tackle2-addon:latest}"
-TACKLE_ADDON_WINDUP_IMAGE="${TACKLE_ADDON_WINDUP_IMAGE:-quay.io/konveyor/tackle2-addon-windup:latest}"
+TACKLE_ADDON_ADMIN_IMAGE="${TACKLE_ADDON_ADMIN_IMAGE:-quay.io/konveyor/tackle2-addon:release-0.2}"
+TACKLE_ADDON_WINDUP_IMAGE="${TACKLE_ADDON_WINDUP_IMAGE:-quay.io/konveyor/tackle2-addon-windup:release-0.2}"
 TACKLE_IMAGE_PULL_POLICY="${TACKLE_IMAGE_PULL_POLICY:-Always}"
 
 TACKLE_FEATURE_AUTH_REQUIRED="${TACKLE_FEATURE_AUTH_REQUIRED:-false}"
