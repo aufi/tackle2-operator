@@ -3,7 +3,7 @@
 set -e
 set -x
 
-TACKLE_OPERATOR_INDEX_IMAGE="${TACKLE_OPERATOR_INDEX_IMAGE:-quay.io/konveyor/tackle2-operator-index:release-0.2}"
+TACKLE_OPERATOR_INDEX_IMAGE="${TACKLE_OPERATOR_INDEX_IMAGE:-quay.io/konveyor/tackle2-operator-index:latest}"
 TACKLE_HUB_IMAGE="${TACKLE_HUB_IMAGE:-quay.io/konveyor/tackle2-hub:release-0.2}"
 TACKLE_PATHFINDER_IMAGE="${TACKLE_PATHFINDER_IMAGE:-quay.io/konveyor/tackle-pathfinder:1.3.0-native}"
 TACKLE_UI_IMAGE="${TACKLE_UI_IMAGE:-quay.io/konveyor/tackle2-ui:release-0.2}"
