@@ -11,6 +11,7 @@ TACKLE_UI_INGRESS_CLASS_NAME="${TACKLE_UI_INGRESS_CLASS_NAME:-nginx}"
 TACKLE_ADDON_ADMIN_IMAGE="${TACKLE_ADDON_ADMIN_IMAGE:-quay.io/konveyor/tackle2-addon:release-0.2}"
 TACKLE_ADDON_WINDUP_IMAGE="${TACKLE_ADDON_WINDUP_IMAGE:-quay.io/konveyor/tackle2-addon-windup:release-0.2}"
 TACKLE_IMAGE_PULL_POLICY="${TACKLE_IMAGE_PULL_POLICY:-Always}"
+TACKLE_OPERATOR_CHANNEL="${TACKLE_OPERATOR_CHANNEL:-development}"
 
 TACKLE_FEATURE_AUTH_REQUIRED="${TACKLE_FEATURE_AUTH_REQUIRED:-false}"
 
@@ -61,7 +62,7 @@ metadata:
   name: konveyor-operator
   namespace: konveyor-tackle
 spec:
-  channel: development
+  channel: ${TACKLE_OPERATOR_CHANNEL}
   installPlanApproval: Automatic
   name: konveyor-operator
   source: konveyor-tackle
